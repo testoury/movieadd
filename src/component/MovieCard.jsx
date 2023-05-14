@@ -9,7 +9,7 @@ const MovieCard = ({ movieDetails:{id , title, posterUrl, description, rate } })
     <Card  style={{ width: "18rem" , margin:"100px" , display:"flex" , flexWrap:"wrap" , }}>
       <Card.Img  style={{width:"100%" , height:"50%" } } variant="top" src={posterUrl} />
       <Card.Body style={{ width:"100%" , height:"100%" ,}}>
-        <Card.Title ><h2>{title}</h2></Card.Title>
+        <Card.Title style={{fontSize:"1rem"}}><h2 >{title}</h2></Card.Title>
         <Card.Text>
           {description}
         </Card.Text>

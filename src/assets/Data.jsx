@@ -1,7 +1,7 @@
 export var moviesList = [
     {
       id:1,
-      title: `The godfather`,
+      title: `The GodFather`,
       posterUrl: `https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,704,1000_AL_.jpg`,
       description: `The aging patriarch of an organized crime 
              dynasty transfers control of his clandestine 
@@ -10,7 +10,7 @@ export var moviesList = [
     },
     { 
       id:2,
-      title: `Fight club`,
+      title: `Fight Club`,
       posterUrl: `https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,
       description: `An insomniac office worker and 
              a devil-may-care soapmaker form an underground
@@ -20,7 +20,7 @@ export var moviesList = [
     },
     {
       id:3,
-      title: `The illusinist`,
+      title: `The Illusinist`,
       posterUrl: `https://m.media-amazon.com/images/M/MV5BY2VkMzZlZDAtNTkzNS00MDIzLWFmOTctMWQwZjQ1OWJiYzQ1XkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SY1000_SX700_AL_.jpg`,
       description: `In turn-of-the-century Vienna, 
              a magician uses his abilities to secure the 
