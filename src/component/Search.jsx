@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Filter = () => {
+const Search = () => {
     return (
         <div>
-            
+           
         </div>
     );
 }
 
-export default Filter;
+export default Search;

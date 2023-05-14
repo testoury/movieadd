@@ -1,6 +1,6 @@
 import React from 'react';
-
-const MovieList = ({movies}) => {
+import MovieCard from './MovieCard';
+const MovieList = ({movies ,}) => {
     return (
         <div>
             {
