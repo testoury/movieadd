@@ -11,10 +11,10 @@ const App = () => {
   const [searchRate , setSearchRate] = useState(0)
   return (
     <div >
-      <Search  setSearchWord={setSearchWord} searchRate={searchRate} setSearchRate={setSearchRate}/> 
-      
+       <div><Search  setSearchWord={setSearchWord} searchRate={searchRate} setSearchRate={setSearchRate}/>
+      <AddUrs setMovies={setMovies} /></div>
       <MovieList movies={searchWord ? movies.filter(e=>e.title.toLowerCase().includes(searchWord.toLowerCase())) : searchRate ?movies.filter(e=>e.rate==searchRate) :movies }/>
-      <AddUrs setMovies={setMovies} />
+     
       
     </div>
   );

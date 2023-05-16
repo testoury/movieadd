@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Rate from './Rate';
-import './MovieCard.css';
+import './css//MovieCard.css';
 
 
 const MovieCard = ({ movieDetails:{id , title, posterUrl, description, rate ,  posterFile } }) => {
@@ -14,6 +14,7 @@ const MovieCard = ({ movieDetails:{id , title, posterUrl, description, rate ,  p
       display:"flex", 
       flexDirection: "column",
       animation: "fade-in 2s ease",
+      
     }}>
       <Card.Img  style={{width:"100%", height:"400px" } } variant="top" src={posterUrl ? posterUrl : posterFile} />
       <Card.Body className="custom-card-body" style={{ 
