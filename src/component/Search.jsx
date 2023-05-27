@@ -1,10 +1,12 @@
 import React from 'react';
 import { FaSearch } from "react-icons/fa";
 import Rate from './Rate';
+import Navbar from './NavBar';
+import Addurs from './AddUrs';
 
 const Search = ({setSearchWord ,searchRate , setSearchRate }) => {
   return (
-    <div style={{ position: "relative", display: "inline-block" }}>
+    <div style={{display:'flex' }}> <Navbar /> <div style={{ position: "relative", display: "inline-block" }}>
       <input 
         style={{
           padding: "10px",
@@ -15,8 +17,8 @@ const Search = ({setSearchWord ,searchRate , setSearchRate }) => {
           color: "white",
           fontSize: "1rem",
           marginRight: "10px",
-          marginLeft:"500px",
-          marginTop: "10px",
+          marginLeft:"200px",
+          marginTop: "30px",
           width: "300px",
           
         }}
@@ -39,16 +41,18 @@ const Search = ({setSearchWord ,searchRate , setSearchRate }) => {
       </span>
       <span style={{
           position: 'absolute',
-          top: "100%",
-          left: "89.50%",
+          top: "70%",
+          left: "80%",
           transform: "translateY(40%)",
           color: "#fff",
           cursor: "pointer",
         }}>
-      <Rate  rate={searchRate} setSearchRate={setSearchRate} />
+      <Rate   rate={searchRate} setSearchRate={setSearchRate} />
       </span>
+      
+      
     </div>
-    
+    </div>
   );
 }
 export default Search;

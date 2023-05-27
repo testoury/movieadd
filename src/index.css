@@ -1,3 +1,4 @@
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -24,15 +25,15 @@ a:hover {
 }
 
 body {
-  margin: 0px;;
-  background-image: url('./assets/backg.jpg');
-  background-size: cover;
+  margin: 0px;
+  margin-top: -16px;
+  background-image: url('./assets/backg.jpg') ;
+  background-size: contain;
   background-position: center;
-  display: flex;
   place-items: center;
   min-width: 320px;
+  flex-wrap: wrap;
   min-height: 100vh;
-  
 }
 
 h1 {

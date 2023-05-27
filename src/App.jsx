@@ -1,21 +1,21 @@
-import React , {useState} from 'react';
-import { moviesList } from './assets/Data';
-import MovieList from './component/MovieList';
-import Search from './component/Search' ;
-import AddUrs from './component/AddUrs';
-
+import React from 'react';
+import { BrowserRouter , Route , Routes , Link } from 'react-router-dom';
+import Home from './Home';
+import Favlist from './Favlist';
+import Contact from './Contact';
 
 const App = () => {
-  const [movies , setMovies]= useState(moviesList);
-  const [searchWord , setSearchWord ] = useState ("")
-  const [searchRate , setSearchRate] = useState(0)
   return (
-    <div >
-       <div><Search  setSearchWord={setSearchWord} searchRate={searchRate} setSearchRate={setSearchRate}/>
-      <AddUrs setMovies={setMovies} /></div>
-      <MovieList movies={searchWord ? movies.filter(e=>e.title.toLowerCase().includes(searchWord.toLowerCase())) : searchRate ?movies.filter(e=>e.rate==searchRate) :movies }/>
-     
+    <div>
       
+      <BrowserRouter>
+      <Routes>
+        <Route path='/Home'  element={<Home/>} />
+        <Route path='/Favlist'  element={<Favlist/>} />
+        <Route path='/Contact'  element={<Contact/>} />
+
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,0 +1,31 @@
+/* styles.css */
+
+  
+  .navbar li {
+    list-style-type: none;
+  }
+  
+  .navbar li button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-bottom: 2px solid transparent;
+    border-color: #ffffff;
+    border-right: 1px solid #ffffff;
+    margin-top: 20px;
+     /* Change this to the desired color */
+  }
+  
+  .navbar li button.active {
+    border-bottom: 2px solid rgba(28, 241, 92, 0.753);
+    
+  }
+  
+  .navbar li button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  

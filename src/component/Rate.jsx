@@ -1,6 +1,7 @@
 import React from 'react';
 import {AiOutlineHeart} from 'react-icons/ai'
 import {AiFillHeart} from 'react-icons/ai'
+import './css/rate.css'
 
 const Rate = ({ setSearchRate , rate }) => {
     const stars = (x) => {
@@ -11,10 +12,10 @@ const Rate = ({ setSearchRate , rate }) => {
             <span
               className='rating'
               key={i}
-              onClick={() => setSearchRate(i + 1)}
+              onClick={() =>  { i==0 ? setSearchRate(0) : setSearchRate(i + 1)}}
               style={{ cursor: 'pointer' }}
             >
-            <AiFillHeart/>
+            <AiFillHeart className='active' />
             </span>
           );
         } else {

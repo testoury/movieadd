@@ -1,0 +1,15 @@
+.rating > svg {
+    font-size: 20px;
+    color: #30D5C8;
+  }
+  
+  .rating > span:hover svg,
+  .rating > span:hover ~ span svg {
+    color: #30D5C8;
+  }
+  
+  .rating > span.active svg,
+  .rating > span.active ~ span svg {
+    color: #30D5C8;
+  }
+  

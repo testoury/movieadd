@@ -52,4 +52,16 @@ display: flex;
 margin: 3px;
 margin-left: -8px;
   }
+  .heart-rating > span {
+    display: inline-block;
+    cursor: pointer;
+  }
   
+  .heart-rating > span svg {
+    font-size: 24px;
+    color: #ccc;
+  }
+  
+  .heart-rating > span svg.active {
+    color: #30D5C8;
+  }
