@@ -5,9 +5,30 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Rate from './Rate';
 import './css/MovieCard.css';
 import MovieModal from './MovieModal';
+import {AddFavmovie} from '../Redux/Actions' ;
+import { useDispatch, useSelector } from 'react-redux';
 
-const MovieCard = ({ setfavolist, movieDetails }) => {
+
+
+
+
+
+const MovieCard = ({movieDetails  }) => {
+  const { id, title, posterUrl, description, rate, posterFile } = movieDetails;
+  const dispatch=useDispatch();
   const [showModal, setShowModal] = useState(false);
+  const favorite=useSelector(state=>state)
+  
+  const handleDispatch = (fav) => {
+    const isMovieInCart = favorite.Cart.find((el) => el.id === fav.id);
+    if (isMovieInCart) {
+      alert("You already have this movie in your list.");
+    } else {
+      dispatch(AddFavmovie(fav));
+      alert("Your movie has been added to favorites.");
+    }
+  };
+  
 
   const handleOpenModal = () => {
     setShowModal(true);
@@ -16,8 +37,6 @@ const MovieCard = ({ setfavolist, movieDetails }) => {
   const handleCloseModal = () => {
     setShowModal(false);
   };
-
-  const { id, title, posterUrl, description, rate, posterFile } = movieDetails;
 
   return (
     <>
@@ -37,9 +56,14 @@ const MovieCard = ({ setfavolist, movieDetails }) => {
             </ListGroup.Item>
           </ListGroup>
           <hr />
-          <Button variant="primary" style={{ alignSelf: 'flex-end', marginBottom: '10px' }} onClick={handleOpenModal}>
+          <div style={{display:'flex' , justifyContent:"space-around", alignItems:"center"}}>
+          <Button variant="primary"  onClick={handleOpenModal}>
             See more
           </Button>
+          <Button variant="secondary "  onClick={()=>handleDispatch(movieDetails)} style={{background:'white' , color:'black' }} >
+            Add to favorite
+          </Button>
+          </div>
         </Card.Body>
       </Card>
 

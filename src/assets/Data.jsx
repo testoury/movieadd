@@ -8,7 +8,7 @@ export const moviesList = [
     description:
       "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
     rate: 2,
-    posterFile :'',
+    trailerUrl :"https://www.youtube.com/watch?v=UaVTIH8mujA"
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ export const moviesList = [
     description:
       "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
     rate: 3,
-    posterFile :'',
+    trailerUrl :'https://www.youtube.com/watch?v=qtRKdVHc-cE&pp=ygUSZmlnaHQgY2x1YiB0cmFpbGVy',
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ export const moviesList = [
     description:
       "In turn-of-the-century London, a pair of magicians create an illusion that shocks the city.",
     rate: 4,
-    posterFile :'',
+    trailerUrl :'https://www.youtube.com/watch?v=ELq7V8vkekI&pp=ygUUVGhlIFByZXN0aWdlIHRyYWlsZXI%3D',
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ export const moviesList = [
     description:
       "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
     rate: 5,
-    posterFile :'',
+    trailerUrl :'https://www.youtube.com/watch?v=NmzuHjWmXOc&pp=ygUgVGhlIFNoYXdzaGFuayBSZWRlbXB0aW9uIHRyYWlsZXI%3D',
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ export const moviesList = [
     description:
       "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
     rate: 4,
-    posterFile :'',
+    trailerUrl :'https://www.youtube.com/watch?v=EXeTwQWrcwY&pp=ygUXVGhlIERhcmsgS25pZ2h0IHRyYWlsZXI%3D',
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ export const moviesList = [
     description:
       "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
     rate: 5,
-    posterFile :'',
+    trailerUrl :'https://www.youtube.com/watch?v=YoHD9XEInc0&pp=ygUSSW5jZXB0aW9uICB0cmFpbGVy',
   },
   {
     id: 7,
@@ -68,7 +68,7 @@ export const moviesList = [
     description:
       "The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.",
     rate: 4,
-    posterFile :'',
+    trailerUrl :'https://www.youtube.com/watch?v=9O1Iy9od7-A&pp=ygUfVGhlIEdvZGZhdGhlcjogUGFydCBJSSAgdHJhaWxlcg%3D%3D',
   },
   {
     id: 8,
@@ -78,7 +78,7 @@ export const moviesList = [
     description:
       "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
     rate: 4,
-    posterFile :'',
+    trailerUrl :'https://www.youtube.com/watch?v=vKQi3bBA1y8&pp=ygUSVGhlIE1hdHJpeCB0cmFpbGVy',
 
   },
   ];
