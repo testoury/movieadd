@@ -8,7 +8,7 @@ const Favlist = ({data }) => {
     
     return (
         <div  >
-            <Navbar/>  
+            <Navbar style={{marginTop:"-20px"}}/>  
             <div  style={{ display: 'flex', flexWrap: 'wrap',  }}>
             {
                 data.map((e ,key)=>

@@ -1,0 +1,20 @@
+{
+  "users":[
+      {
+          "id":0 ,
+          "name ":"Testouri Hichem" ,
+          "email":"bloudandgold565@gmail.com",
+          "Phone Number":"53348719"
+
+      },
+      {
+        "id":1 ,
+        "name ":"User2" ,
+        "email":"User2@gmail.com ",
+        "Phone Number":"*********"
+
+    }
+    
+      
+  ]
+}

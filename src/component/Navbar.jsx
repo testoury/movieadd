@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="navbar"  >
    
-      <ul style={{display:"flex" , flexDirection:"row", }}>
+      <ul style={{display:"flex" , flexDirection:"row", marginTop:'0px'   }}>
        
         <li style={{marginLeft:'2rem'}}><Link  to="/"><button>Home</button></Link ></li>
         <li style={{marginLeft:'2rem'}}><Link to="/Favlist"><button>Favorite</button></Link></li>

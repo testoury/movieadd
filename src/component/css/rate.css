@@ -1,4 +1,5 @@
 .rating > svg {
+  justify-self: flex-end;
     font-size: 20px;
     color: #30D5C8;
   }

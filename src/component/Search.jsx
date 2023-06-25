@@ -41,7 +41,7 @@ const Search = ({setSearchWord ,searchRate , setSearchRate }) => {
       </span>
       <span style={{
           position: 'absolute',
-          top: "70%",
+          top: "80%",
           left: "80%",
           transform: "translateY(40%)",
           color: "#fff",

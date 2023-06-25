@@ -25,10 +25,8 @@ a:hover {
 }
 
 body {
-  margin: 0px;
-  margin-top: -16px;
-  margin-bottom: -16px;
-  background-image: url('./assets/backg.jpg') ;
+  margin: 0;
+  background-image: url('./assets/back3.jpg') ;
   background-size: contain;
   background-position: center;
   place-items: center;
